@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Salgados da Márcia",
+    "slug": "CalculadoraSalgados",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/LogoAdaptada.png",
+    "scheme": "calculadorasalgados",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/LogoAdaptada.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": false,
+      "package": "com.jessc.CalculadoraSalgados"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/LogoAdaptada.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/LogoAdaptada.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-sqlite",
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Permitir que o app salve imagens",
+          "videosPermission": "Permitir que o app salve vídeos"
+        } 
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "fc654140-e9a8-4cb4-b346-cf0c9a873a2f"
+      }
+    },
+    "owner": "jessc",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/fc654140-e9a8-4cb4-b346-cf0c9a873a2f"
+    }
+  }
+}
